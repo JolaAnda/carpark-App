@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BonoboParking</string>
+    <string name="google_maps_key">AIzaSyAvOYFbrUrS5h6nT3Fe1H6Wb9nosSlSzKE</string>
+    <string name="parkhaus_am">""</string>
+    <string name="distance">""</string>
+    <string name="opening">Open</string>
+    <string name="details">details</string>
+    <string name="nearby">nearby</string>
+    <string name="initialBottomSheet">Click on car park</string>
+    <string name="parkinglotamount">""</string>
+    <string name="standardText">nearby</string>
+
+</resources>

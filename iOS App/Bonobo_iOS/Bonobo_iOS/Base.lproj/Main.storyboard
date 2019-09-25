@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bonobo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dc8-b9-MjC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="sJG-hB-gkr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3u-Zp-adk">
+                                                <rect key="frame" x="20" y="8" width="50" height="39"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-8n-5JC">
+                                                <rect key="frame" x="166.5" y="8" width="42" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-7C-31D">
+                                                <rect key="frame" x="305" y="8" width="50" height="39"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="ZSK-ll-nog"/>
+                                            <constraint firstAttribute="height" constant="55" id="f0W-17-JHL"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                    </stackView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBo-KV-tAf">
+                                        <rect key="frame" x="0.0" y="55" width="375" height="545"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="545" id="S1X-Pr-w3k"/>
+                                        </constraints>
+                                    </mapView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sJG-hB-gkr" firstAttribute="leading" secondItem="Dc8-b9-MjC" secondAttribute="leading" id="NvY-h2-w9Y"/>
+                                    <constraint firstItem="sJG-hB-gkr" firstAttribute="top" secondItem="Dc8-b9-MjC" secondAttribute="top" id="SIk-3I-nGu"/>
+                                    <constraint firstAttribute="trailing" secondItem="FBo-KV-tAf" secondAttribute="trailing" id="pTC-Kn-CTi"/>
+                                    <constraint firstAttribute="trailing" secondItem="sJG-hB-gkr" secondAttribute="trailing" id="xzm-wP-0hA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dc8-b9-MjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4h5-mO-G7e"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Dc8-b9-MjC" secondAttribute="bottom" constant="-18" id="ORb-fg-jqK"/>
+                            <constraint firstAttribute="trailing" secondItem="Dc8-b9-MjC" secondAttribute="trailing" id="SVD-Qg-1Vw"/>
+                            <constraint firstItem="Dc8-b9-MjC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pFK-sS-tNo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="leftBtn" destination="L3u-Zp-adk" id="T6i-bj-uj4"/>
+                        <outlet property="mapView" destination="FBo-KV-tAf" id="Jm2-yu-BTe"/>
+                        <outlet property="navigationLabel" destination="lFZ-8n-5JC" id="87O-1X-7f9"/>
+                        <outlet property="rightBtn" destination="KAc-7C-31D" id="2dw-Zj-HAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
